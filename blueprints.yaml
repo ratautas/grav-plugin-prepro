@@ -25,7 +25,48 @@ form:
         0: PLUGIN_ADMIN.DISABLED
       validate:
         type: bool
-    text_var:
+    dev:
+      type: toggle
+      label: PLUGIN_PREPRO.MODE
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_PREPRO.DEV
+        0: PLUGIN_PREPRO.PROD
+      validate:
+        type: bool
+    prepro_type:
+        type: select
+        size: long
+        # classes: fancy
+        label: PLUGIN_ADMIN.DEFAULT_ORDERING
+        help: PLUGIN_ADMIN.DEFAULT_ORDERING_HELP
+        default: none
+        options:
+          none: none
+          scss: SCSS
+          less: LESS
+    css_dir:
       type: text
-      label: PLUGIN_PREPRO.TEXT_VARIABLE
-      help: PLUGIN_PREPRO.TEXT_VARIABLE_HELP
+      label: PLUGIN_PREPRO.CSS_DIR
+      help: PLUGIN_PREPRO.CSS_DIR_HELP
+    css_file:
+      type: text
+      label: PLUGIN_PREPRO.CSS_FILE
+      help: PLUGIN_PREPRO.CSS_FILE_HELP
+    less_dir:
+      type: text
+      label: PLUGIN_PREPRO.LESS_DIR
+      help: PLUGIN_PREPRO.LESS_DIR_HELP
+    less_file:
+      type: text
+      label: PLUGIN_PREPRO.LESS_FILE
+      help: PLUGIN_PREPRO.LESS_FILE_HELP
+    scss_dir:
+      type: text
+      label: PLUGIN_PREPRO.SCSS_DIR
+      help: PLUGIN_PREPRO.SCSS_DIR_HELP
+    scss_file:
+      type: text
+      label: PLUGIN_PREPRO.SCSS_FILE
+      help: PLUGIN_PREPRO.SCSS_FILE_HELP

@@ -1,4 +1,18 @@
 en:
   PLUGIN_PREPRO:
-    TEXT_VARIABLE: Text Variable
-    TEXT_VARIABLE_HELP: Text to add to the top of a page
+    MODE: 'Mode'
+    MODE_HELO: 'Mode help'
+    DEV: 'Development'
+    PROD: 'Production'
+    CSS_DIR: 'CSS directory'
+    CSS_DIR_HELP: 'Enter relative path to theme'
+    CSS_FILE: 'CSS output file name'
+    CSS_FILE_HELP: 'Enter genereated CSS file name'
+    SCSS_DIR: 'SCSS directory'
+    SCSS_DIR_HELP: 'Enter relative path to theme'
+    SCSS_FILE: 'SCSS entry file name'
+    SCSS_FILE_HELP: 'Enter SCSS entry file name'
+    LESS_DIR: 'LESS directory'
+    LESS_DIR_HELP: 'Enter relative path to theme'
+    LESS_FILE: 'LESS entry file name'
+    LESS_FILE_HELP: 'Enter LESS entry file name'
