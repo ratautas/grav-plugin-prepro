@@ -1,0 +1,31 @@
+name: Prepro
+version: 0.1.0
+description: Compile LESS/SCSS files to CSS
+icon: plug
+author:
+  name: ratautas
+  email: algirdas.tamasauskas@gmail.com
+homepage: https://github.com/ratautas/grav-plugin-prepro
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/ratautas/grav-plugin-prepro/issues
+docs: https://github.com/ratautas/grav-plugin-prepro/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    text_var:
+      type: text
+      label: PLUGIN_PREPRO.TEXT_VARIABLE
+      help: PLUGIN_PREPRO.TEXT_VARIABLE_HELP
